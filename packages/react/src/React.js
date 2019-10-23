@@ -59,6 +59,8 @@ import {
   enableFundamentalAPI,
 } from 'shared/ReactFeatureFlags';
 const React = {
+
+  // 这个对象提供了一堆帮你处理props.children的方法，因为children是一个类似数组但不是数组的数据结构，如果你要对其进行处理可以用React.Children外挂的方法。
   Children: {
     map,
     forEach,
